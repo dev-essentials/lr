@@ -1,0 +1,14 @@
+{
+  "name": "rl",
+  "version": "0.0.1",
+  "description": "Extract line ranges from piped input.",
+  "main": "rl.js",
+  "bin": {
+      "rl": "rl.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Quinten <splittydev@gmail.com>",
+  "license": "MIT"
+}
