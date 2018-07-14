@@ -1,5 +1,5 @@
 {
-  "name": "rl",
+  "name": "rl-util",
   "version": "0.0.1",
   "description": "Extract line ranges from piped input.",
   "categories": [
