@@ -1,7 +1,7 @@
 # lr
 > Extract line ranges from piped input.
 
-[![npm](https://img.shields.io/npm/v/lr-util.svg?style=for-the-badge)](https://www.npmjs.com/package/lr-util)
+[![npm](https://img.shields.io/npm/v/@dev-essentials/lr.svg?style=for-the-badge)](https://www.npmjs.com/package/@dev-essentials/lr)
 
 **INFO**: lr is still in ealry development. Syntax and features may be subject to change.
 

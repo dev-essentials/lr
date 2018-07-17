@@ -1,5 +1,5 @@
 {
-  "name": "lr-util",
+  "name": "@dev-essentials/lr",
   "version": "0.0.1",
   "description": "Extract line ranges from piped input.",
   "categories": [
