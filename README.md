@@ -1,6 +1,8 @@
 # rl
 > Extract line ranges from piped input.
 
+[![npm](https://img.shields.io/npm/v/@splittydev/rl-util.svg)](https://www.npmjs.com/package/rl-util)
+
 **INFO**: rt is still in early development. Syntax and features may be subject to change.
 
 ## Why
