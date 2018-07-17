@@ -1,6 +1,8 @@
 # rl
 > Extract line ranges from piped input.
 
+**INFO**: rt is still in early development. Syntax and features may be subject to change.
+
 ## Why
 I frequently find myself googling 'linux get specific line from file'.
 
@@ -11,8 +13,7 @@ Here's what usually pops up[<sup>*1</sup>](#footnotes):
 I'm looking this up more often than I wanna admit.   
 So I wrote a simple solution for extracting line ranges.
 
-Of course sed and awk are way more powerful, but if you just wanna extract some lines,   
-and - like me - just can't remember those commands, rl could be a good alternative for you.
+Of course sed and awk are way more powerful, but if you just wanna extract some lines and just can't remember those commands, rl could be a good alternative for you.
 
 ## Syntax
 rl has a very simple range-based syntax.   
@@ -28,12 +29,10 @@ Multiple ranges can be specified, separated by comma (`,`) characters.
 ## Behavior
 Lines being matched by multiple ranges are only output once.
 
-Ranges covering the full line range will be treated as pass-through,   
-which means they will simply output their input as-is: (`-`, `^-$`).
+Ranges covering the full line range will be treated as pass-through, which means they will simply output their input as-is: (`-`, `^-$`).
 
 ## Examples
-Due to the special markers (`^` and `$`) there will be some cases   
-where multiple expressions yield the same result.
+Due to the special markers (`^` and `$`) there will be some cases where multiple expressions yield the same result.
 
 In the following examples, all possible combinations will be listed.
 
@@ -50,7 +49,7 @@ Get lines 5 to 10 and lines 25 to 30:
 
 Get lines 1 to 10 and lines 50 to end:
 > `$ cat myfile | rl 1-10,50-$`   
-> `$ cat myfile | rl ^-10,50-$`-
+> `$ cat myfile | rl ^-10,50-$`
 
 Get all lines of a file <sub>(Seems pretty useless to me)</sub>:
 > `$ cat myfile | rl -`   
