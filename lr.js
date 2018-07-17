@@ -42,9 +42,9 @@ class Range {
                 return lineNum <= this.b.num;
             }
         }
-        console.log('ERROR! Unhandled case: ');
-        console.log(this.a);
-        console.log(this.b);
+        console.error('ERROR! Unhandled case: ');
+        console.error(this.a);
+        console.error(this.b);
         process.exit(1);
     }
 }
